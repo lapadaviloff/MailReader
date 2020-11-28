@@ -1,0 +1,9 @@
+F:\project\c#\MailReader\MailReader\bin\Debug\MailReader.exe.config
+F:\project\c#\MailReader\MailReader\bin\Debug\MailReader.exe
+F:\project\c#\MailReader\MailReader\bin\Debug\MailReader.pdb
+F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.csprojAssemblyReference.cache
+F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.Properties.Resources.resources
+F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.csproj.GenerateResource.cache
+F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.csproj.CoreCompileInputs.cache
+F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.exe
+F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.pdb
