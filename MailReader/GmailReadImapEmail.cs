@@ -1,4 +1,5 @@
-﻿using ActiveUp.Net.Mail;
+﻿using System;
+using ActiveUp.Net.Mail;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -11,11 +12,20 @@ namespace GmailReadImapEmail
 
         public MailRepository(string mailServer, int port, bool ssl, string login, string password)
         {
-            if (ssl)
-                Client.ConnectSsl(mailServer, port);
-            else
-                Client.Connect(mailServer, port);
-            Client.Login(login, password);
+            try
+            {
+                if (ssl)
+                    Client.ConnectSsl(mailServer, port);
+                else
+                    Client.Connect(mailServer, port);
+                Client.Login(login, password);
+            }
+            catch (Exception e)
+            { 
+                Console.WriteLine(e);
+                System.Environment.Exit(-1);
+            }
+        
         }
 
         public IEnumerable<Message> GetAllMails(string mailBox)
@@ -56,8 +66,6 @@ namespace GmailReadImapEmail
                 }
                 count = 1;
             }
-
-
                 return Messages;
         }
     }

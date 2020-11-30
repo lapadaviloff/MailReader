@@ -19,12 +19,18 @@ namespace MailReader
         public Form1()
         {
             InitializeComponent();
+            
+            this.StartPosition = FormStartPosition.Manual;
 
+            var wArea = Screen.PrimaryScreen.WorkingArea;
+            this.Left = wArea.Width + wArea.Left - this.Width;
+            this.Top = wArea.Height + wArea.Top - this.Height;
+            
             var mailRepository = new MailRepository(
                                 "imap.gmail.com",
                                 993,
                                 true,
-                                "email",
+                                "miam.devsoft@gmail.com",
                                 "password"
                             );
             var flags = new FlagCollection { "Seen" };

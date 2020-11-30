@@ -50,8 +50,10 @@ namespace MailReader
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 421);
             this.Controls.Add(this.display);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "MailReader";
             this.ResumeLayout(false);
             this.PerformLayout();
 
