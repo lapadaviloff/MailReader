@@ -7,3 +7,15 @@ F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.csproj.GenerateResource
 F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.csproj.CoreCompileInputs.cache
 F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.exe
 F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.pdb
+F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.Form1.resources
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Common.dll
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Dns.dll
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Groupware.dll
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Imap4.dll
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Mail.dll
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Nntp.dll
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.OpenPGP.dll
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Pop3.dll
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Smtp.dll
+F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.WhoIs.dll
+F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.csproj.CopyComplete

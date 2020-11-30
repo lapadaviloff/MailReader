@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace MailReader
 {
     partial class Form1
@@ -29,13 +31,36 @@ namespace MailReader
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.display = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // display
+            // 
+            this.display.Location = new System.Drawing.Point(-2, 1);
+            this.display.Multiline = true;
+            this.display.Name = "display";
+            this.display.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.display.Size = new System.Drawing.Size(349, 424);
+            this.display.TabIndex = 2;
+            this.display.TabStop = false;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(347, 421);
+            this.Controls.Add(this.display);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
+        
+
         #endregion
+        private System.Windows.Forms.TextBox display;
     }
 }
 
