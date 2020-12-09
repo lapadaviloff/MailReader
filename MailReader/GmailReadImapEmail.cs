@@ -2,6 +2,8 @@
 using ActiveUp.Net.Mail;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
+using Message = ActiveUp.Net.Mail.Message;
 
 namespace GmailReadImapEmail
 {
@@ -12,20 +14,12 @@ namespace GmailReadImapEmail
 
         public MailRepository(string mailServer, int port, bool ssl, string login, string password)
         {
-            try
-            {
+          
                 if (ssl)
                     Client.ConnectSsl(mailServer, port);
                 else
                     Client.Connect(mailServer, port);
-                Client.Login(login, password);
-            }
-            catch (Exception e)
-            { 
-                Console.WriteLine(e);
-                System.Environment.Exit(-1);
-            }
-        
+                    Client.Login(login, password);
         }
 
         public IEnumerable<Message> GetAllMails(string mailBox)
@@ -54,6 +48,7 @@ namespace GmailReadImapEmail
 
         private IEnumerable<Message> GetMails(string mailBox, string searchPhrase)
         {
+            //нумерация сообшений по порядку 
             int count = 1;
              mails = Client.SelectMailbox(mailBox);
             var Messages = mails.SearchParse(searchPhrase).Cast<Message>();

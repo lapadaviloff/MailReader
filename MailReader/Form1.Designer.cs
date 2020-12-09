@@ -35,9 +35,9 @@ namespace MailReader
             this.display = new System.Windows.Forms.TextBox();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dgdffffffffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ggdfggToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ggdggdgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.новыйEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,29 +60,29 @@ namespace MailReader
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dgdffffffffToolStripMenuItem,
-            this.ggdfggToolStripMenuItem,
-            this.ggdggdgToolStripMenuItem});
+            this.новыйEmailToolStripMenuItem,
+            this.оПрограммеToolStripMenuItem,
+            this.выходToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(150, 70);
             // 
-            // dgdffffffffToolStripMenuItem
+            // новыйEmailToolStripMenuItem
             // 
-            this.dgdffffffffToolStripMenuItem.Name = "dgdffffffffToolStripMenuItem";
-            this.dgdffffffffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dgdffffffffToolStripMenuItem.Text = "dgdffffffff";
+            this.новыйEmailToolStripMenuItem.Name = "новыйEmailToolStripMenuItem";
+            this.новыйEmailToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.новыйEmailToolStripMenuItem.Text = "Новый Email";
             // 
-            // ggdfggToolStripMenuItem
+            // оПрограммеToolStripMenuItem
             // 
-            this.ggdfggToolStripMenuItem.Name = "ggdfggToolStripMenuItem";
-            this.ggdfggToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ggdfggToolStripMenuItem.Text = "ggdfgg";
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
             // 
-            // ggdggdgToolStripMenuItem
+            // выходToolStripMenuItem
             // 
-            this.ggdggdgToolStripMenuItem.Name = "ggdggdgToolStripMenuItem";
-            this.ggdggdgToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ggdggdgToolStripMenuItem.Text = "ggdggdg";
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.выходToolStripMenuItem.Text = "Выход";
             // 
             // Form1
             // 
@@ -105,9 +105,9 @@ namespace MailReader
         private System.Windows.Forms.TextBox display;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem dgdffffffffToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ggdfggToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ggdggdgToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem новыйEmailToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
     }
 }
 

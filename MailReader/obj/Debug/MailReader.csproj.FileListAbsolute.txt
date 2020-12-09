@@ -19,3 +19,4 @@ F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Pop3.dll
 F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.Smtp.dll
 F:\project\c#\MailReader\MailReader\bin\Debug\ActiveUp.Net.WhoIs.dll
 F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.csproj.CopyComplete
+F:\project\c#\MailReader\MailReader\obj\Debug\MailReader.FormError.resources

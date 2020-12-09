@@ -39,7 +39,7 @@ namespace MailReader
             var wArea = Screen.PrimaryScreen.WorkingArea;
             this.Left = wArea.Width + wArea.Left - this.Width;
             this.Top = wArea.Height + wArea.Top - this.Height;
-
+			///
             //this.components = new System.ComponentModel.Container();
             //this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             //notifyIcon1.Icon = SystemIcons.Exclamation;
@@ -60,28 +60,15 @@ namespace MailReader
             //подписываемся на событие изменения размера формы
             this.Resize += new EventHandler(FormForTray_Resize);
 
-
-
-            var mailRepository = new MailRepository(
+          Connect connect = new Connect (
                                 "imap.gmail.com",
                                 993,
                                 true,
                                 "miam.devsoft@gmail.com",
                                 "password"
                             );
-            var flags = new FlagCollection { "Seen" };
-            var emailList = mailRepository.GetUnreadMails("inbox");//выбор входящих непрочитанных сообщений
-            string content = "";
-
-            foreach (Message email in emailList)
-            {
-
-                content += " " + " " + email.From + " " + email.Subject + " " + " " + Environment.NewLine + Environment.NewLine;
-                mailRepository.Mails.RemoveFlagsSilent(email.Id, flags);//снятие флага seen с сообщения
-
-            }
-
-            display.Text = content;//вывод в text box
+                
+            display.Text = connect.Content();//вывод в text box
 
         }
 
@@ -121,6 +108,6 @@ namespace MailReader
             }
         }
 
-
+  
     }
 }
